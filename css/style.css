@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Serif JP", "Hiragino Kaku Gothic Pro", sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #333333;
+    --dark-purple: #B3189C;
+    --yellow: #CDA93C
+
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
