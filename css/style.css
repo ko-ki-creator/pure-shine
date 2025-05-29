@@ -613,7 +613,378 @@ button {
 
 
 /* ---------------------------------------------------CTA */
+.cta-inner {
+    background-image: url(/images/cta-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 476px;
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
 
+.cta-container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+
+    img {
+        width: 45%;
+        object-fit: cover;
+    }
+}
+
+.regular-price {
+    margin-bottom: 20px;
+
+    > p {
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 300;
+        background-color: var(--dark-gray);
+        padding: 0 10px;
+        width: fit-content;
+    }
+
+    .fee-tax-yen {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .fee {
+        color: var(--dark-purple);
+        font-size: 45px;
+        line-height: 1em;
+        text-decoration: line-through;
+        text-decoration-color: #FF3939;
+        text-decoration-thickness: 1px;
+    }
+}
+
+.tax-yen {
+    text-align: center;
+    margin-left: 5px;
+
+    .tax {
+        font-size: 12px;
+        line-height: 1em;
+    }
+
+    .yen {
+        font-size: 21px;
+        line-height: 1em;
+    }
+}
+
+.campaign-price {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+    .campaign-text {
+        background-image: url(/images/cta-campaign-back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 244px;
+        height: 54px;
+        color: var(--white);
+        margin-right: 20px;
+        padding: 3px 0 3px 5px;
+    }
+
+    .campaign-price-flex {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .fee {
+        color: #FE5959;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 1em;
+    }
+}
+
+.free-shipping {
+    font-family: "Hiragino Kaku Gothic Pro";
+    margin-bottom: 50px;
+
+    .free-text {
+        color: var(--black);
+        font-size: 21px;
+
+        .moreover {
+            font-size: 16px;
+            background-color: #E5E5FF;
+            border: 1px solid #9999DE;
+            padding: 5px 10px;
+            border-radius: 25px;
+        }
+
+        .free {
+            color: var(--white);
+            font-size: 33px;
+            font-weight: 600;
+            background-color: #938ABF;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+
+    .after-text {
+        color: var(--black);
+    }
+}
+
+.cta-btn {
+
+    a {
+        color: var(--white);
+        font-size: 30px;
+        font-weight: 600;
+        display: inline-block;
+        border: 2px solid #20957B;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #BDEAB2 0%, #0B8A73 100%);
+        padding: 10px 30px;
+        transition-duration: .4s;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 20px;
+            width: 40px;
+            height: 40px;
+            background-image: url(/images/cart-icon.png);
+            background-size: contain;
+            vertical-align: middle;
+        }
+
+        &::after {
+            content: url(/images/cta-arrow.png);
+            display: inline-block;
+            margin-left: 20px;
+            width: 8px;
+            height: 16px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+/* ---------------------------------------------------VOICE */
+.voice-inner {
+    margin-bottom: 100px;
+}
+
+.voice-content-left {
+    display: flex;
+    position: relative;
+    margin-bottom: 200px;
+
+    > img {
+        width: 275px;
+        height: 319px;
+        z-index: 20;
+    }
+
+    .voice-group {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        width: 100%;
+        display: flex;
+
+        > p {
+            font-size: 24px;
+            transform: rotate(90deg);
+            letter-spacing: 0.1em;
+            width: fit-content;
+            height: fit-content;
+            padding-top: 60px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .voice-box {
+            border: 3px solid #AEA327;
+            z-index: 10;
+            width: 100%;
+            padding: 30px 15px 30px 310px;
+
+            img {
+                width: 205px;
+                height: 37px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: var(--black);
+                font-size: 21px;
+
+                span {
+                    background-color: #FFFBB3;
+                }
+            }
+        }
+    }
+}
+
+.voice-content-right {
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+
+    > img {
+        width: 275px;
+        height: 319px;
+        z-index: 20;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+    }
+
+    .voice-group {
+        width: 100%;
+        display: flex;
+
+        > p {
+            font-size: 24px;
+            transform: rotate(-90deg);
+            letter-spacing: 0.1em;
+            width: fit-content;
+            height: fit-content;
+            padding-top: 60px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .voice-box {
+            border: 3px solid #AEA327;
+            z-index: 10;
+            width: 100%;
+            padding: 30px 0 30px 30px;
+
+            img {
+                width: 205px;
+                height: 37px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: var(--black);
+                font-size: 21px;
+
+                span {
+                    background-color: #FFFBB3;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ---------------------------------------------------FAQ */
+.faq-inner {
+    margin-bottom: 100px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.faq-content {
+    width: 48%;
+    color: var(--black);
+    margin: 0 auto;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background: linear-gradient(90deg, #D2CAF6 0%, #F3B6FB 100%);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.q {
+    font-size: 42px;
+    line-height: 1.2em;
+}
+
+.q-text {
+    font-size: 21px;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.a {
+    font-size: 42px;
+    line-height: 1.2em;
+}
+
+.a-text {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* ---------------------------------------------------フッター */
+.footer-inner {
+
+    nav {
+        margin-bottom: 50px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            li {
+                &::after {
+                    content: '|';
+                    margin-left: 20px;
+                }
+
+                &:last-child::after {
+                    display: none;
+                }
+
+                a {
+                    color: var(--black);
+                }
+            }
+        }
+    }
+
+    .copyright {
+        color: var(--black);
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
 
 
 
@@ -974,6 +1345,202 @@ SP
             height: fit-content;
         }
     }
+
+
+    /* ---------------------------------------------------CTA */
+    .cta-inner {
+        height: 755px;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+            width: 345px;
+            margin: 0 auto;
+        }
+    }
+
+    .regular-price {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .campaign-price {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .campaign-text {
+            margin-bottom: 10px;
+        }
+    }
+
+    .free-shipping {
+        margin-bottom: 20px;
+
+        .free-text {
+            text-align: center;
+            font-size: 16px;
+            line-height: 2.5em;
+
+            .free {
+                font-size: 24px;
+            }
+        }
+
+        .after-text {
+            text-align: center;
+        }
+    }
+
+    .cta-btn {
+        text-align: center;
+
+        a {
+            font-size: 16px;
+            padding: 10px 20px;
+
+            &::before {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+
+
+    /* ---------------------------------------------------VOICE */
+    .voice-inner {
+        padding: 0 15px;
+    }
+
+    .voice-content-left {
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        > img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .voice-group {
+            position: static;
+            width: 100%;
+            flex-direction: column-reverse;
+            margin-top: -45px;
+
+            > p {
+                transform: rotate(0deg);
+                width: 100%;
+                text-align: right;
+                padding: 0;
+            }
+
+            .voice-box {
+                padding: 20px;
+
+                img {
+                    width: 150px;
+                    height: 27px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .voice-content-right {
+
+        > img {
+            width: 50%;
+            height: 50%;
+            left: 0;
+            top: 0;
+        }
+
+        .voice-group {
+            flex-direction: column;
+            margin-top: 60px;
+
+            > p {
+                transform: rotate(0deg);
+                width: 100%;
+                text-align: right;
+            }
+
+            .voice-box {
+                padding: 20px;
+
+                img {
+                    width: 150px;
+                    height: 27px;
+                }
+
+                p {
+                    font-size: 16px;
+
+                    span {
+                        background-color: #FFFBB3;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* ---------------------------------------------------FAQ */
+    .faq-inner {
+        padding: 0 15px;
+    }
+
+    .faq-content {
+        width: 100%;
+    }
+
+    .question {
+        margin-bottom: 0;
+    }
+
+    .q {
+        font-size: 21px;
+    }
+
+    .q-text {
+        font-size: 16px;
+    }
+
+    .a {
+        font-size: 21px;
+    }
+
+
+    /* ---------------------------------------------------フッター */
+
+        ul {
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                text-align: center;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        .copyright {
+            color: var(--black);
+            font-size: 12px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
 
 
 
