@@ -1420,7 +1420,7 @@ SP
 
     .voice-content-left {
         flex-direction: column;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
 
         > img {
             width: 50%;
@@ -1456,17 +1456,18 @@ SP
     }
 
     .voice-content-right {
+        flex-direction: column-reverse;
 
         > img {
             width: 50%;
             height: 50%;
-            left: 0;
-            top: 0;
+            position: static;
+            object-fit: cover;
         }
 
         .voice-group {
             flex-direction: column;
-            margin-top: 60px;
+            margin-top: -105px;
 
             > p {
                 transform: rotate(0deg);
