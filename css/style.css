@@ -12,6 +12,7 @@ body {
     --black: #333333;
     --dark-purple: #535392;
     --light-purple: #9999DE;
+    --dark-gray: #656668;
 
 }
 
@@ -49,13 +50,14 @@ button {
 }
 
 
-/* メインビジュアル */
+/* ---------------------------------------------------メインビジュアル */
 .header-wrapper {
     background-image: url(/images/mv-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 720px;
+    margin-bottom: 100px;
 }
 
 .header-inner {
@@ -182,4 +184,808 @@ button {
             transform: scale(1.1);
         }
     }
+}
+
+
+/* ---------------------------------------------------POINT */
+.point-inner {
+    margin-bottom: 100px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    color: var(--dark-purple);
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 60px;
+        font-weight: 400;
+        font-family: "Playball";
+        line-height: 1em;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+.point-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    img {
+        width: 50%;
+        height: 240px;
+        object-fit: contain;
+        position: relative;
+        z-index: 20;
+    }
+}
+
+.point-group {
+    width: 1025px;
+    height: 300px;
+    background: linear-gradient(90deg, #F5F1FF 0%, #FFFFFF 100%);
+    border-radius: 150px 0 0 150px;
+    display: grid;
+    place-content: center;
+    margin-left: -30%;
+    position: relative;
+    z-index: 10;
+    padding-left: 33%;
+
+    h3 {
+        color: var(--light-purple);
+        font-size: 45px;
+        font-weight: 400;
+        font-family: "Playball";
+    }
+
+    h4 {
+        color: var(--dark-purple);
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: var(--dark-purple);
+        font-size: 16px;
+    }
+}
+
+.point-group-right {
+    width: 1025px;
+    height: 300px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #F5F1FF 100%);
+    border-radius: 0 150px 150px 0;
+    display: grid;
+    place-content: center;
+    margin-right: -30%;
+    position: relative;
+    z-index: 10;
+    padding-right: 33%;
+
+    h3 {
+        color: var(--light-purple);
+        font-size: 45px;
+        font-weight: 400;
+        font-family: "Playball";
+    }
+
+    h4 {
+        color: var(--dark-purple);
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: var(--dark-purple);
+        font-size: 16px;
+    }
+}
+
+
+/* ---------------------------------------------------PROBLEM */
+.solution-inner {
+    margin-bottom: 100px;
+}
+
+.problem-container {
+    background-image: url(/images/problem-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 881px;
+    margin-bottom: 100px;
+}
+
+.problem-flex {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    .flex-left,
+    .flex-right {
+        display: flex;
+    }
+}
+
+.problem-content-above {
+    position: relative;
+    width: 50%;
+    height: fit-content;
+    z-index: 20;
+
+    img {
+        width: 100%;
+    }
+
+    .problem-text {
+        position: absolute;
+        left: 0;
+        top: 380px;
+        color: var(--white);
+
+
+        h3 {
+            font-size: 21px;
+            font-weight: 400;
+            background-color: var(--dark-gray);
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 214px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            background-color: var(--dark-gray);
+            padding: 10px;
+            width: 260px;
+        }
+    }
+}
+
+.problem-content-under {
+    position: relative;
+    top: 200px;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+
+    img {
+        width: 100%;
+    }
+
+    .problem-text {
+        position: absolute;
+        top: 380px;
+        right: 0;
+        color: var(--white);
+
+
+        h3 {
+            font-size: 21px;
+            font-weight: 400;
+            background-color: var(--dark-gray);
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 343px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            background-color: var(--dark-gray);
+            padding: 10px;
+            width: 308px;
+            margin-left: auto;
+        }
+    }
+}
+
+
+
+/* ---------------------------------------------------SOLUTION */
+.solution-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.solution-content {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+
+    img {
+        width: 345px;
+    }
+}
+
+.solution-text {
+
+    h3 {
+        color: var(--black);
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 2em;
+        margin-bottom: 20px;
+
+        span {
+            color: var(--white);
+            font-size: 30px;
+            background: linear-gradient(90deg, #938ABF 0%, #CB78D5 100%);
+            padding: 0 10px;
+        }
+    }
+
+    p {
+        font-weight: 600;
+        font-family: "Hiragino Kaku Gothic Pro";
+        background: linear-gradient(90deg, #938ABF 0%, #CB78D5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+/* ---------------------------------------------------PRODUCT */
+.product-inner {
+    margin-bottom: 100px;
+}
+
+.product-content-left {
+    position: relative;
+    margin-bottom: 50px;
+
+    .product-group {
+        width: 85%;
+        margin-left: auto;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--black);
+            font-family: "Hiragino Kaku Gothic Pro";
+            margin-left: 70px;
+        }
+    }
+
+    .bubble-number {
+        background-image: url(/images/product-bubble.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 230px;
+        height: 210px;
+        place-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h3 {
+            font-size: 60px;
+            font-weight: 400;
+            font-family: "Playball";
+            line-height: 1em;
+            background: linear-gradient(60deg, #535392 0%, #9999DE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: fit-content;
+            margin-left: 50px;
+        }
+
+        h4 {
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 1em;
+            background: linear-gradient(60deg, #535392 0%, #9999DE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width: fit-content;
+            margin-left: 80px;
+        }
+
+        .small {
+            font-size: 45px;
+            width: 268px;
+            margin-left: 50px;
+        }
+    }
+}
+
+.product-content-right {
+    position: relative;
+    margin-bottom: 50px;
+
+    .product-group {
+        width: 85%;
+        margin-right: auto;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--black);
+            font-family: "Hiragino Kaku Gothic Pro";
+            margin-left: 235px;
+        }
+    }
+
+    .bubble-number {
+        background-image: url(/images/product-bubble.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 230px;
+        height: 210px;
+        display: grid;
+        place-content: center;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        h3 {
+            font-size: 60px;
+            font-weight: 400;
+            font-family: "Playball";
+            line-height: 1em;
+            background: linear-gradient(60deg, #535392 0%, #9999DE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h4 {
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 1em;
+            background: linear-gradient(60deg, #535392 0%, #9999DE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-left: 30px;
+        }
+
+        .small {
+            font-size: 45px;
+            width: 268px;
+            margin-left: 0px;
+        }
+    }
+}
+
+
+/* ---------------------------------------------------HOW TO USE */
+.use-inner {
+    margin-bottom: 50px;
+
+    > p {
+        color: var(--black);
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.use-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 20px;
+        height: 31px;
+        margin-right: 10px;
+    }
+}
+
+.use-content {
+    border: 1px solid #938ABF;
+    padding: 10px;
+    width: 33%;
+    height: 183px;
+
+    h3 {
+        color: #938ABF;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #666666;
+        background-color: #ECECFF;
+        padding: 10px;
+        line-height: 1.8em;
+        height: fit-content;
+    }
+}
+
+
+/* ---------------------------------------------------CTA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+SP
+-------------------------- */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        /* padding: 0 15px; */
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    /* ---------------------------------------------------メインビジュアル */
+    .mv-left-gradation {
+        width: 40%;
+    }
+
+    .mv-right-gradation {
+        width: 40%;
+    }
+
+    .catch-copy {
+        width: 100%;
+        padding: 30px 15px;
+        text-align: left;
+
+        h1 {
+            font-size: 39px;
+            line-height: 54px;
+            margin-bottom: 10px;
+
+            span {
+                font-size: 45px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .main-img {
+        flex-direction: column-reverse;
+        gap: 0;
+
+        p {
+            font-size: 16px;
+            writing-mode: horizontal-tb;
+            text-align: center;
+            height: fit-content;
+            padding: 10px 15px;
+            line-height: 24px;
+        }
+    }
+
+    .center-img {
+        gap: 0;
+        justify-content: center;
+        margin-top: -70px;
+        padding-left: 15px;
+    }
+
+    .mv-bottle {
+        width: 131px;
+        height: 240px;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
+
+    .mv-woman {
+        width: 228px;
+        height: 298px;
+        object-fit: cover;
+    }
+
+    .mv-btn {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+
+        }
+    }
+
+
+    /* ---------------------------------------------------POINT */
+    .heading {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 21px;
+        }
+    }
+
+    .point-content {
+        flex-direction: column;
+
+        .point1,
+        .point3 {
+            width: 90%;
+            height: 100%;
+            margin-right: auto;
+        }
+
+        .point2 {
+            width: 90%;
+            height: 100%;
+            margin-left: auto;
+        }
+    }
+
+    .point-group {
+        width: 100%;
+        margin: -100px 0 0 15px;
+        padding: 100px 15px 0;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 21px;
+        }
+    }
+
+    .point-group-right {
+        width: 100%;
+        margin: -100px 0 0 15px;
+        padding: 100px 15px 0;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 21px;
+        }
+    }
+
+
+/* ---------------------------------------------------PROBLEM */
+    .problem-container {
+        width: 100%;
+        height: 1720px;
+        margin-bottom: 50px;
+    }
+
+    .problem-flex {
+        flex-direction: column;
+        padding: 50px 15px;
+
+        .flex-left,
+        .flex-right {
+            flex-direction: column;
+        }
+
+        .flex-left {
+            margin-bottom: 220px;
+        }
+    }
+
+    .problem-content-above {
+        width: 100%;
+
+        img {
+            height: 390px;
+            object-fit: cover;
+        }
+
+        .problem-text {
+            top: 240px;
+        }
+    }
+
+    .problem-content-under {
+        width: 100%;
+        margin-top: -180px;
+
+        img {
+            height: 390px;
+            object-fit: cover;
+        }
+
+        .problem-text {
+            top: 240px;
+        }
+    }
+
+
+    /* ---------------------------------------------------SOLUTION */
+    .solution-container {
+        padding: 0 15px;
+    }
+
+    .solution-content {
+        flex-direction: column;
+        gap: 0px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .solution-text {
+
+        h3 {
+            font-size: 18px;
+
+            span {
+                font-size: 21px;
+                padding: 5px 10px;
+            }
+        }
+    }
+
+
+
+    /* ---------------------------------------------------PRODUCT */
+
+    .product-content-left {
+
+        .product-group {
+            width: 100%;
+
+            img {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            p {
+                font-family: "Hiragino Kaku Gothic Pro";
+                margin: auto 15px;
+            }
+        }
+
+        .bubble-number {
+            width: 150px;
+            height: 130px;
+            top: 25%;
+            transform: translateY(-25%);
+
+            h3 {
+                font-size: 36px;
+                margin-left: 30px;
+            }
+
+            h4 {
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            .small {
+                font-size: 30px;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .product-content-right {
+
+        .product-group {
+            width: 100%;
+
+            img {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            p {
+                font-family: "Hiragino Kaku Gothic Pro";
+                margin: auto 15px;
+            }
+        }
+
+        .bubble-number {
+            width: 150px;
+            height: 130px;
+            top: 25%;
+            right: 0;
+            transform: translateY(-25%);
+
+            h3 {
+                font-size: 36px;
+            }
+
+            h4 {
+                font-size: 36px;
+            }
+        }
+    }
+
+
+    /* ---------------------------------------------------HOW TO USE */
+    .use-inner {
+        padding: 0 15px;
+
+        > p {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+
+    .use-container {
+        flex-direction: column;
+
+        img {
+            transform: rotate(90deg);
+        }
+    }
+
+    .use-content {
+        width: 100%;
+
+        h3 {
+            font-size: 21px;
+        }
+
+        p {
+            height: fit-content;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
