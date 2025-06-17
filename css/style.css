@@ -4,6 +4,9 @@ html {
 
 body {
     font-family: "Noto Serif JP", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+.wrap {
     overflow-x: hidden;
 }
 
