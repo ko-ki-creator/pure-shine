@@ -619,7 +619,8 @@ button {
         background-color: #ECECFF;
         padding: 10px;
         line-height: 1.8em;
-        min-height: 107px;
+        /* min-height: 107px; */
+        height: 100%;
     }
 
     &::after {
