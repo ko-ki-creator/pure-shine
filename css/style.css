@@ -590,22 +590,21 @@ button {
 }
 
 .use-container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
     margin-bottom: 20px;
-
-    img {
-        width: 20px;
-        height: 31px;
-        margin-right: 10px;
-    }
+    width: 100%;
 }
 
 .use-content {
     border: 1px solid #938ABF;
     padding: 10px;
-    width: 33%;
-    height: 183px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
 
     h3 {
         color: #938ABF;
@@ -621,6 +620,24 @@ button {
         padding: 10px;
         line-height: 1.8em;
         min-height: 107px;
+    }
+
+    &::after {
+        content: '';
+        background-image: url(/images/howtouse-arrow.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 31px;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+    }
+
+    &:last-child::after {
+        content: none;
     }
 }
 
@@ -1330,7 +1347,7 @@ SP
 
 
     /* ---------------------------------------------------HOW TO USE */
-    .use-inner {
+        .use-inner {
         padding: 0 15px;
 
         > p {
@@ -1340,22 +1357,23 @@ SP
     }
 
     .use-container {
-        flex-direction: column;
-
-        img {
-            transform: rotate(90deg);
-        }
+        grid-template-columns: 1fr;
     }
 
     .use-content {
-        width: 100%;
 
         h3 {
             font-size: 21px;
         }
 
         p {
-            height: fit-content;
+            min-height: auto;
+        }
+
+        &::after {
+            bottom:-70%;
+            left: 50%;
+            transform: translateX(-50%) rotate(90deg);
         }
     }
 
